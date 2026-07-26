@@ -1,8 +1,25 @@
 aid: ebbo
 name: Ebbo
-description: 'Ebbo is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Ebbo is an enterprise loyalty and promotional marketing technology company that helps
+  brands build lasting customer relationships and grow revenue through engagement. Its platform powers
+  paid, tiered, and engagement-based loyalty programs alongside promotional overlays such as sweepstakes,
+  instant wins, contests, and user-generated-content campaigns, supported by real-time performance
+  dashboards, purchase validation, and advanced privacy and security controls. Ebbo pairs this technology
+  with full-service program design, creative, program management, data analytics, rewards sourcing, and
+  customer service for brands including T-Mobile, Lowe''s, and FULLBEAUTY Brands. Backed by Norwest
+  Venture Partners.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.ebbo.com/wp-content/themes/_ws/logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/ebbo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Unknown
+- Loyalty
+- Marketing Technology
+- Promotions
+- Customer Engagement
+- Rewards
+- Sweepstakes
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ebbo-domain-security.yml
 - type: Website
   url: https://ebbo.com
+- type: Blog
+  url: https://www.ebbo.com/insights/
+- type: Support
+  url: https://www.ebbo.com/contact-us/
+- type: PrivacyPolicy
+  url: https://www.ebbo.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.ebbo.com/terms-of-use/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
