@@ -29,7 +29,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-08-13'
 tags:
 - Company
 - Loyalty
@@ -57,8 +57,37 @@ common:
   url: https://www.ebbo.com/privacy-policy/
 - type: TermsOfService
   url: https://www.ebbo.com/terms-of-use/
+- type: BlogRSS
+  url: https://www.ebbo.com/feed/
+- type: LLMsTxt
+  url: llms/ebbo-llms.txt
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-13'
+  status: minimal
+  artifacts_added: 4
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+  note: >-
+    Full contract-discovery pass run 2026-08-13. No machine-readable contract and no
+    developer program found. Probe artifacts written for well-known, plans and
+    rate-limits; llms.txt generated. Deliberately NO WellKnown, Plans or RateLimits
+    pointer emitted — each of those artifacts records a measured absence, and a
+    pointer would assert a surface Ebbo does not publish.
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    Ebbo's Integration Management page markets "an advanced API framework" and lists
+    "API documentation", "Permission-based access" and "Permission Throttling" as API
+    resources, but links none of them — api., docs. and developer.ebbo.com do not
+    resolve, every spec path 404s on www.ebbo.com, and the only route to the reference
+    is the "Get in touch" contact form.
+  evidence:
+  - url: https://www.ebbo.com/solutions/technology/integration/
+    status: 200
+  - url: https://www.ebbo.com/openapi.json
+    status: 404
+  - url: https://www.ebbo.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.ebbo.com/pricing/
+    status: 404
+  checked: '2026-08-13'
