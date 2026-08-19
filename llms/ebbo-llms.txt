@@ -1,0 +1,113 @@
+# ebbo
+
+> Ebbo is an enterprise loyalty and promotional marketing technology company. Its platform
+> powers paid, tiered, points-based and engagement-based loyalty programs alongside
+> promotional overlays — sweepstakes, instant wins, contests, trivia and user-generated-content
+> campaigns — supported by real-time performance dashboards, purchase validation, and privacy
+> and security controls. Ebbo pairs the technology with full-service program design, creative,
+> program management, data analytics, rewards sourcing and customer service for brands
+> including T-Mobile, Lowe's and FULLBEAUTY Brands. Backed by Norwest Venture Partners.
+
+<!--
+generated: '2026-08-13'
+method: generated
+source: apis.yml + www.ebbo.com page sitemap (probed 2026-08-13); ebbo.com serves no /llms.txt (404)
+This file was written by the API Evangelist enrichment pipeline from Ebbo's own public
+pages. It is NOT published by Ebbo. Every link below was probed and returned HTTP 200.
+-->
+
+## API status
+
+Ebbo has no public developer program. There is no developer portal, no API reference, and no
+machine-readable specification (OpenAPI, AsyncAPI, GraphQL SDL, JSON Schema or Postman
+collection) published anywhere on ebbo.com or any ebbo-controlled host.
+
+Ebbo does market an API. Its Integration Management page states the platform "offers an
+advanced API framework for seamless integrations" and lists API resources including
+"Permission-based access", "API documentation", "Custom and standard API Management" and
+"Permission Throttling". None of these is linked or reachable. The documented route to the
+API is the contact form.
+
+- Integration Management: https://www.ebbo.com/solutions/technology/integration/
+- Contact: https://www.ebbo.com/contact-us/
+
+Named prebuilt platform connectors (per the Integration page): Salesforce, ZenDesk,
+PayPal/Venmo, LexisNexis, Swift/DaVinci. Custom adaptors are offered for proprietary systems.
+
+## Solutions
+
+- Loyalty: https://www.ebbo.com/solutions/loyalty/
+- Paid loyalty: https://www.ebbo.com/solutions/loyalty/paid-loyalty/
+- Tiered loyalty: https://www.ebbo.com/solutions/loyalty/tiered-loyalty/
+- Engagement loyalty: https://www.ebbo.com/solutions/loyalty/engagement-loyalty/
+- Points-based rewards: https://www.ebbo.com/solutions/loyalty/points-based-rewards/
+- Retention rewards: https://www.ebbo.com/solutions/loyalty/retention-rewards/
+- Promotions: https://www.ebbo.com/solutions/promotions/
+- Sweepstakes: https://www.ebbo.com/solutions/promotions/sweepstakes/
+- Instant wins: https://www.ebbo.com/solutions/promotions/instant-wins/
+- Trivia: https://www.ebbo.com/solutions/promotions/trivia/
+- UGC contests and sweepstakes: https://www.ebbo.com/solutions/promotions/ugc-contests-and-sweepstakes/
+- Reward management: https://www.ebbo.com/solutions/reward-management/
+
+## Technology
+
+- Technology overview: https://www.ebbo.com/solutions/technology/
+- Integration: https://www.ebbo.com/solutions/technology/integration/
+- Real-time performance dashboards: https://www.ebbo.com/solutions/technology/real-time-performance-dashboards/
+- Purchase validation: https://www.ebbo.com/solutions/technology/purchase-validation/
+- Advanced privacy controls: https://www.ebbo.com/solutions/technology/advanced-privacy-controls/
+- Security: https://www.ebbo.com/solutions/technology/industry-leading-security/
+
+## Services
+
+- Services overview: https://www.ebbo.com/services/
+- Program design and strategy: https://www.ebbo.com/services/program-design-strategy/
+- Development services: https://www.ebbo.com/services/development-services/
+- Program management: https://www.ebbo.com/services/program-management/
+- Data analytics and insights: https://www.ebbo.com/services/data-analytics-and-insights/
+- Rewards sourcing and fulfillment: https://www.ebbo.com/services/rewards-sourcing-and-fulfillment/
+- Creative and user experience: https://www.ebbo.com/services/creative-and-user-experience/
+- Customer service: https://www.ebbo.com/services/customer-service/
+
+## Company
+
+- Website: https://www.ebbo.com
+- Company: https://www.ebbo.com/company/
+- Investors: https://www.ebbo.com/company/investors/
+- News: https://www.ebbo.com/company/news/
+- Careers: https://www.ebbo.com/company/careers/
+- Results and case studies: https://www.ebbo.com/results/
+
+## Insights
+
+- Insights: https://www.ebbo.com/insights/
+- Blog: https://www.ebbo.com/insights/blog/
+- Blog RSS: https://www.ebbo.com/feed/
+- Data studies: https://www.ebbo.com/insights/data-studies/
+- eBooks: https://www.ebbo.com/insights/ebooks/
+- Webinars: https://www.ebbo.com/insights/webinars/
+- Events: https://www.ebbo.com/insights/events/
+
+## Legal
+
+- Privacy policy: https://www.ebbo.com/privacy-policy/
+- Terms of use: https://www.ebbo.com/terms-of-use/
+- Cookies: https://www.ebbo.com/cookies/
+- California consumer rights: https://www.ebbo.com/california-consumer-rights/
+- Do not sell or share my personal information: https://www.ebbo.com/do-not-sell-or-share-my-personal-information/
+
+## Notes for agents
+
+- Pricing is not published. Every commercial path ends at https://www.ebbo.com/contact-us/.
+- Rate limits are not published, though "Permission Throttling" is named as a capability.
+- No named security certification (SOC 2, ISO 27001, PCI DSS, HIPAA) is published; the
+  security page carries a "Security credentials" heading with no credentials enumerated.
+- No /.well-known/ document is served: security.txt, openid-configuration,
+  oauth-authorization-server, api-catalog and ai-plugin.json all return 404 on www.ebbo.com.
+- No A2A agent card and no MCP server exist on any ebbo host.
+- No first-party SDK exists on npm, PyPI, or any other registry, and there is no Ebbo
+  GitHub organization.
+- https://www.ebbo.com/wp-json/ is live, but it is stock WordPress CMS plumbing for the
+  marketing site — it is not an Ebbo product API and must not be treated as one.
+- claruscommerce.com (Ebbo's former name, Clarus Commerce) redirects every path to the
+  ebbo.com homepage with HTTP 200. Those are catch-all redirects, not documents.

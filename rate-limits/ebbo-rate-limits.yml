@@ -1,0 +1,30 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.ebbo.com/solutions/technology/integration/
+docs: null
+limit_count: 0
+note: >-
+  Ebbo names throttling as a capability but publishes no limits. The Integration
+  Management page lists, under "API resources": "Permission-based access",
+  "API documentation", "Monitoring/Alerting on connections errors", and
+  "Custom and standard API Management / Permission Throttling". So a rate-limiting
+  mechanism demonstrably exists on the ebbo platform — but no window, quota, burst,
+  response header, or exhaustion status code is published anywhere on the public
+  site, and there is no developer portal or reference to read them from. An
+  integrator cannot learn Ebbo's limits without a sales conversation and an
+  account. Honest zero: the number is undocumented, not absent.
+limits: []
+headers: []
+exhaustion_status: null
+claims:
+- claim: Permission Throttling
+  source: https://www.ebbo.com/solutions/technology/integration/
+  quantified: false
+  note: listed as an API management capability; no values given
+- claim: Permission-based access
+  source: https://www.ebbo.com/solutions/technology/integration/
+  quantified: false
+  note: implies per-credential scoping, but no scope or permission reference is published
+evidence:
+- url: https://www.ebbo.com/solutions/technology/integration/
+  status: 200

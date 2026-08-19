@@ -1,0 +1,25 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.ebbo.com/wp-sitemap-posts-page-1.xml
+docs: null
+plan_count: 0
+note: >-
+  Ebbo publishes no pricing, plans, or packaging of any kind. The full page
+  sitemap (194 URLs) contains no /pricing/, /plans/, or /packages/ page, and a
+  direct probe of https://www.ebbo.com/pricing/ returns 404. Ebbo sells an
+  enterprise loyalty and promotions platform bundled with full-service program
+  design, management and rewards sourcing; every commercial surface on the site
+  terminates in a "Get in touch" contact form rather than a price. There is a
+  /roi-calculator/ page, but it models a prospect's program returns — it does
+  not disclose what Ebbo charges. This is an honest zero, not a gap in the probe.
+pricing_model: contact-sales
+plans: []
+evidence:
+- url: https://www.ebbo.com/pricing/
+  status: 404
+- url: https://www.ebbo.com/wp-sitemap-posts-page-1.xml
+  status: 200
+  note: no pricing/plans page present in the sitemap
+- url: https://www.ebbo.com/contact-us/
+  status: 200
+  note: the only route to commercial terms

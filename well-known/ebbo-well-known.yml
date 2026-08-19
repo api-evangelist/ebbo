@@ -1,0 +1,88 @@
+generated: '2026-08-13'
+method: probed
+source: live HTTPS probes of every ebbo.com host resolved during contract discovery
+note: >-
+  Every /.well-known/ path probed returned a negative result. No pointer of type
+  WellKnown or SecurityTxt is emitted for this repo, because nothing here is a
+  served document — this file records a measured ABSENCE, not a presence.
+  www.ebbo.com answers a genuine WordPress 404 on all five paths (the host also
+  404s /openapi.json, so its 404 handling is real and not a soft-200 catch-all).
+  portal.ebbo.com and engage.ebbo.com sit behind a Cloudflare bot block that
+  answers 403 "Attention Required!" to every path including the site root, so
+  those two hosts are unmeasured rather than confirmed-absent.
+hosts:
+- host: https://www.ebbo.com
+  reachable: true
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+- host: https://portal.ebbo.com
+  reachable: false
+  block: cloudflare-403
+  note: >-
+    Cloudflare security block ("Sorry, you have been blocked / You are unable to
+    access ebbo.com") returned for every path including "/". Not a 404 and not a
+    login — the edge refused the probe, so absence cannot be asserted for this host.
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+- host: https://engage.ebbo.com
+  reachable: false
+  block: cloudflare-403
+  note: Same Cloudflare edge block as portal.ebbo.com; both resolve to 104.20.39.242.
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+hosts_not_resolving:
+- api.ebbo.com
+- apis.ebbo.com
+- developer.ebbo.com
+- developers.ebbo.com
+- docs.ebbo.com
+- app.ebbo.com
+- my.ebbo.com
+- platform.ebbo.com
+- rewards.ebbo.com
+summary:
+  documents_found: 0
+  hosts_probed: 3
+  hosts_nxdomain: 9
